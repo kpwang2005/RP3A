@@ -15,7 +15,7 @@ while True:
     print('Distance: ', sensor.distance * 100)
     if sensor.distance < 0.3:
         #led.blink(0.2, 0.2)
-        pijuice.status.SetLedBlink('D2', 2,[100, 0, 0], 500, [0, 100, 0], 500)
+        pijuice.status.SetLedBlink('D2', 2,[120, 180, 150], 500, [0, 0, 0], 500)
     else:
         #led.off()
         pijuice.status.SetLedState('D2', [0, 0, 0])
